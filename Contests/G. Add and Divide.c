@@ -7,6 +7,5 @@ int main()
     while(a>=b)
     {
         a/=b;
-        b++;
     }
 }
