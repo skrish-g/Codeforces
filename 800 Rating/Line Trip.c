@@ -10,7 +10,7 @@ int main()
         scanf("%d %d", &n, &x);
         for(int j=1; j<=n; j++)
         {
-            
+            //
         }
     }
 }
