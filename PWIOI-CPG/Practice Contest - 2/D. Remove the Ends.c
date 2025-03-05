@@ -42,7 +42,7 @@ int main()
             {
                 sum2-=b[n-j-1];
                 clear_right(b, n-j-1, n);
-            }
+            } 
         }
         if(sum1>sum2)
             printf("%d\n", sum1);
