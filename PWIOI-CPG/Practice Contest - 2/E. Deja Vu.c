@@ -16,15 +16,14 @@ int main()
             scanf("%d ", &x[j]);
         for(int j=0; j<n; j++)
         {
-            for(int k=0; k<q; k++)
-            {
-                int check=pow(2, x[k]);
-                if(a[j]%check==0)
+            if(a[j]%2==0)
+                for(int k=0; k<q; k++)
                 {
-                    int add=pow(2, x[k]-1);
-                    a[j]+=add;
+                    if(a[j]%(1<<x[k])==0)
+                    {
+                        a[j]+=(1<<(x[k]-1));
+                    }
                 }
-            }
             printf("%d ", a[j]);
         }            
         printf("\n");
