@@ -8,7 +8,13 @@ int main()
     {
         long long int n=0, k=0, b=0, s=0;
         scanf("%lld %lld %lld %lld", &n, &k, &b, &s);
-        if(s>=k*b && s<=(k*b+n*(k-1)))
+        if(s==0 && b==0)
+        {
+            for(int i=0; i<n; i++)
+                printf("0 ");
+            printf("\n");
+        }
+        else if(s>=k*b && s<=(k*b+n*(k-1)))
             if(s<(k*b+k))
             {
                 for(int i=0; i<n-1; i++)
