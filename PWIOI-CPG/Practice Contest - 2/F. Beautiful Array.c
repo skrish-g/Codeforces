@@ -46,6 +46,6 @@ int main()
                 printf("\n");
             }
         else
-            printf("-1\n");
+            printf("-1\n"); 
     }
 }
