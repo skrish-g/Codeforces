@@ -49,29 +49,3 @@ int main()
             printf("-1\n"); 
     }
 }
-// Just for saving this code for future reference
-// // Thank You Zabi Sir!
-// #include <stdio.h>
-// int main() {
-// 	int T;
-// 	scanf("%d", &T);
-// 	for(int i=0; i<T; i++)
-// 	{
-// 	    int N;
-// 	    scanf("%d", &N);
-//         char S[N];
-// 	    for(int j=0; j<N; j++)
-// 	        scanf(" %c", &S[j]);
-// 	    for(int j=0; j<N/2; j++)
-// 	    {
-// 	        char temp=S[2*j];
-// 	        S[2*j]=S[2*j+1];
-// 	        S[2*j+1]=temp;
-// 	    }
-// 	    for(int j=0; j<N; j++)
-// 	        S[j]='a'+'z'-S[j];
-// 	    for(int j=0; j<N; j++)
-// 	        printf("%c", S[j]);
-// 	    printf("\n");
-// 	}
-// }
