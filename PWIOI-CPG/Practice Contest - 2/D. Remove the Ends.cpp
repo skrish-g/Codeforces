@@ -12,29 +12,30 @@ int main()
         vector<int>a(n,0);
         for(int i=0; i<n; i++)
             cin>>a[i];
-        int sum=0;
-        int s=a.size();
-        int st=0;
-        int en=s-1;
-        while(s)
+        long pf_pos[n];
+        long pf_neg[n];
+        long sum=0;
+        for(int i=0; i<n; i++)
         {
-            if(a[st]>0)
-            {
-                sum+=a[st];
-                st++;
-                s--;
-                continue;
-            }
-            if(a[en]<0)
-            {
-                sum-=a[en];
-                en--;
-                s--;
-                continue;
-            }
-            st++;
-            en--;
+            if(a[i]<0)
+                sum-=a[i];
+            pf_neg[i]=sum;
         }
-        cout<<sum;
+        sum=0;
+        for(int i=n-1; i>=0; i--)
+        {
+            if(a[i]>0)
+                sum+=a[i];
+            pf_pos[i]=sum;
+        }
+        int ans=0;
+        for(int i=n-1; i>=0; i--)
+        {
+            if(a[i]>0 && pf_neg[i]>a[i])
+            {
+                ans+=pf_neg[i];
+            }
+            else if(a[i]<0 && pf_pos[i]>a[i])
+        }
     }
 }
