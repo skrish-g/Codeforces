@@ -6,7 +6,7 @@ int main()
     int N;
     cin>>N;
     map<string,int> mp;
-    for(int i=0; i<N; i++)
+    for(int i=0; i<N; i++) 
     {
         string s;
         cin>>s;
